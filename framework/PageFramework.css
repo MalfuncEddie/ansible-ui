@@ -68,15 +68,15 @@ tr:hover {
 }
 
 :root:where(.pf-v5-theme-dark) tr:hover {
-  background-image: linear-gradient(#ffffff04, #ffffff04) !important;
+  background-image: linear-gradient(#7B36FE, #7B36FE) !important;
 }
 
 tr.selected:hover {
-  background: linear-gradient(#0044aa0b, #0044aa0b) !important;
+  background: linear-gradient(#5020BB, #5020BB) !important;
 }
 
 :root:where(.pf-v5-theme-dark) tr.selected:hover {
-  background: linear-gradient(#44ccff0b, #44ccff0b) !important;
+  background: linear-gradient(#5020BB, #5020BB) !important;
 }
 
 /* Leaving these here until until we make sure the PF5 upgrade has handled these

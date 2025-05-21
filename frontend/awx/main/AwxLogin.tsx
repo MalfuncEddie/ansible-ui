@@ -44,7 +44,7 @@ export function AwxLogin(props: { children: React.ReactNode }) {
           refreshActiveAwxUser?.();
           void mutate(() => true);
         }}
-        brandImg="/assets/awx-logo.svg"
+        brandImg="/static/media/awx-logo.svg"
         brandImgAlt={process.env.PRODUCT}
       />
     );
