@@ -129,7 +129,21 @@ module.exports = function (env, argv) {
         ignoreOrder: false,
       }),
       new CopyPlugin({
-        patterns: [{ from: 'frontend/icons', to: 'static/media' }, { from: 'frontend/assets', to: '/static/awx/assets' }],
+        patterns: [
+          // Original copy operations
+          { from: 'frontend/icons', to: 'static/media' },
+          { from: 'frontend/assets', to: 'static/awx/assets' },
+
+          // Additional copy operations for the logo
+          {
+            from: 'frontend/icons/awx-logo.svg',
+            to: 'static/awx/assets/awx-logo.svg'
+          },
+          {
+            from: 'frontend/icons/awx-logo.svg',
+            to: 'assets/awx-logo.svg'
+          }
+        ],
       }),
       new CompressionPlugin(),
     ].filter(Boolean),
