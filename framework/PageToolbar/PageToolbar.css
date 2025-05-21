@@ -24,10 +24,11 @@
 .pf-v5-c-toolbar__expandable-content.pf-m-expanded {
   padding-top: 8px;
   flex-wrap: wrap;
-  border-bottom: thin solid #0003;
+  border-bottom: thin solid #5020BB;
 }
+
 :root:where(.pf-v5-theme-dark) .pf-v5-c-toolbar__expandable-content.pf-m-expanded {
-  border-bottom: thin solid #fff3;
+  border-bottom: thin solid #7B36FE;
 }
 
 .pf-v5-c-toolbar__group .pf-m-toggle-group {
