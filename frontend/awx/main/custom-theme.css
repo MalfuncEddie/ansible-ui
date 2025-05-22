@@ -1,7 +1,26 @@
 :root {
+
+    /* Primary colors */
+    --pf-global--primary-color--100: #7B36FE;
+    --pf-global--primary-color--200: #5020BB;
+
+    /* Masthead (top navbar) */
+    --pf-c-page__header--BackgroundColor: #7B36FE;
+
+    /* Buttons */
+    --pf-c-button--m-primary--BackgroundColor: #7B36FE;
+    --pf-c-button--m-primary--hover--BackgroundColor: #5020BB;
+
+    /* Toolbar */
+    --pf-c-toolbar--BackgroundColor: #7B36FE;
+
+    /* Navigation (sidebar) */
+    --pf-c-nav__link--hover--BackgroundColor: #5020BB;
+    --pf-c-nav__link--active--BackgroundColor: #7B35FD;
+    --pf-c-nav__link--m-current--BackgroundColor: #7B35FD;
     --pf-c-button--m-primary--BackgroundColor: #7B36FE;
     --pf-v5-c-masthead--BackgroundColor: #7B36FE;
-    --pf-v5-c-masthead--BackgroundColor: #7B36FE;
+
     --pf-c-button--m-primary--hover--BackgroundColor: #5020BB;
     --pf-v5-c-button--m-primary--BackgroundColor: #7B36FE;
     --pf-v5-c-button--m-primary--hover--BackgroundColor: #5020BB;
@@ -11,9 +30,11 @@
     --pf-v5-c-nav__link--active--BackgroundColor: #7B35FD;
     --pf-v5-c-nav__link--m-current--BackgroundColor: #7B35FD;
     --pf-v5-c-nav__link--BackgroundColor: #7B35FD;
+    --pf-v5-global--primary-color--300: #7B35FD;
+
+
 }
 
 .pf-v5-c-button.pf-m-primary {
-    background-color: #3f464d;
-    color: var(--pf-v5-c-button--m-primary--Color);
+    background-color: #7B35FD;
 }
