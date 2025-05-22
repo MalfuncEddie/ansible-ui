@@ -1,4 +1,4 @@
-import './custom-theme.css';
+//import './custom-theme.css';
 import { Page } from '@patternfly/react-core';
 import useSWR, { mutate } from 'swr';
 import { LoadingState } from '../../../framework/components/LoadingState';
