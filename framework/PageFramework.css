@@ -168,11 +168,7 @@ pre {
   background: #7B36FE;
 }
 
-.pf-v5-c-button.pf-m-plain {
-  --pf-v5-c-button--disabled--BackgroundColor: #7B36FE;
-  background-color: #7B36FE;
 
-}
 
 .pf-v5-c-nav__link:active {
   background-color: #5020BB;
