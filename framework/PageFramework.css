@@ -181,3 +181,7 @@ pre {
 .pf-v5-c-masthead__content {
   background: #7B36FE;
 }
+
+:where(.pf-v5-theme-dark) .pf-v5-c-masthead .pf-v5-c-toolbar {
+  --pf-v5-c-toolbar--BackgroundColor: #7B36FE;
+}
