@@ -136,13 +136,13 @@ pre {
   white-space: pre-wrap;
 }
 
+/*
 :where(a) {
   color: #7B36FE;
   font-weight: 500;
-  /* Or 'bold', or 'normal' */
   text-decoration: underline;
 }
-
+*/
 .pf-v5-c-page__sidebar {
   background: #7B36FE;
 }
