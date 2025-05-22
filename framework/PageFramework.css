@@ -151,9 +151,6 @@ pre {
   background: #7B36FE;
 }
 
-.pf-v5-c-nav__item {
-  background: #5020BB;
-}
 
 .pf-v5-c-nav__item:hover {
   background-color: #5020BB;
@@ -165,4 +162,22 @@ pre {
 
 .pf-v5-c-toolbar__group {
   background: #7B36FE;
+}
+
+.pf-m-expanded {
+  background: #7B36FE;
+}
+
+.pf-v5-c-button.pf-m-plain {
+  --pf-v5-c-button--disabled--BackgroundColor: #7B36FE;
+  background-color: #7B36FE;
+
+}
+
+.pf-v5-c-nav__link:active {
+  background-color: #5020BB;
+}
+
+.pf-v5-c-nav__link:focus {
+  background-color: #5020BB;
 }
