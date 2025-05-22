@@ -177,3 +177,7 @@ pre {
 .pf-v5-c-nav__link:focus {
   background-color: #5020BB;
 }
+
+.pf-v5-c-masthead__content {
+  background: #7B36FE;
+}
