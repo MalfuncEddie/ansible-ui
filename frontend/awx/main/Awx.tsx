@@ -1,3 +1,4 @@
+import './custom-theme.css';
 import { lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 
