@@ -135,3 +135,26 @@ tr.selected:hover {
 pre {
   white-space: pre-wrap;
 }
+
+:where(a) {
+  color: #7B36FE;
+  font-weight: 500;
+  /* Or 'bold', or 'normal' */
+  text-decoration: underline;
+}
+
+.pf-v5-c-page__sidebar {
+  background: #7B36FE;
+}
+
+.pf-v5-c-masthead {
+  background: #7B36FE;
+}
+
+.pf-v5-c-nav__item {
+  background: #5020BB;
+}
+
+.pf-v5-c-nav__item:hover {
+  background-color: #5020BB;
+}
