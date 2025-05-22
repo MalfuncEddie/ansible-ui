@@ -13,7 +13,7 @@
    version="1.1"
    id="svg2021"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
-   sodipodi:docname="logo-header.svg"
+   sodipodi:docname="logo.svg"
    inkscape:export-filename="C:\SCAR\scar_white_trans.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -43,18 +43,6 @@
        width="101.82969"
        height="49.979401"
        id="rect4340" />
-    <rect
-       x="6.6888041"
-       y="188.45792"
-       width="165.17258"
-       height="63.610146"
-       id="rect897" />
-    <rect
-       x="6.6888041"
-       y="188.45792"
-       width="165.17258"
-       height="63.610146"
-       id="rect910" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -64,18 +52,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="153.05101"
+     inkscape:cx="480.60486"
      inkscape:cy="128.67984"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="g977"
      inkscape:document-rotation="0"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1057"
+     inkscape:window-height="1017"
      inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:window-y="114"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -103,7 +91,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -194,14 +182,6 @@
            inkscape:export-xdpi="96"
            inkscape:export-ydpi="96" />
       </g>
-      <text
-         xml:space="preserve"
-         id="text895"
-         style="font-size:25.4px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect897);display:inline;fill:#ff0000;"
-         transform="matrix(1.2019585,-0.84162034,0.84162034,1.2019585,-161.49199,-51.784792)"><tspan
-           x="6.6894531"
-           y="210.93008"><tspan
-             style="font-size:25.4px;fill:#ff0000">TEST</tspan></tspan></text>
     </g>
   </g>
   <g
