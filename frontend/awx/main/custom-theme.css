@@ -1,8 +1,9 @@
 :root {
 
-    /* Primary colors */
+    /* Primary colors 
     --pf-global--primary-color--100: #7B36FE;
     --pf-global--primary-color--200: #5020BB;
+    */
 
     /* Masthead (top navbar) */
     --pf-c-page__header--BackgroundColor: #7B36FE;
