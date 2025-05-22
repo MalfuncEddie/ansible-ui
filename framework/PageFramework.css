@@ -158,3 +158,11 @@ pre {
 .pf-v5-c-nav__item:hover {
   background-color: #5020BB;
 }
+
+.pf-v5-c-nav__link:hover {
+  background-color: #5020BB;
+}
+
+.pf-v5-c-toolbar__group {
+  background: #7B36FE;
+}
