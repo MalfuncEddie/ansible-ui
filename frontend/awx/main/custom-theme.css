@@ -8,9 +8,6 @@
     /* Masthead (top navbar) */
     --pf-c-page__header--BackgroundColor: #7B36FE;
 
-    /* Buttons */
-    --pf-c-button--m-primary--BackgroundColor: #7B36FE;
-    --pf-c-button--m-primary--hover--BackgroundColor: #5020BB;
 
     /* Toolbar */
     --pf-c-toolbar--BackgroundColor: #7B36FE;
@@ -25,7 +22,6 @@
     --pf-c-button--m-primary--hover--BackgroundColor: #5020BB;
     --pf-v5-c-button--m-primary--BackgroundColor: #7B36FE;
     --pf-v5-c-button--m-primary--hover--BackgroundColor: #5020BB;
-    --pf-v5-global--palette--black-1000: #7B36FE;
     --pf-v5-c-toolbar--BackgroundColor: #7B36FE;
     --pf-v5-c-nav__link--hover--BackgroundColor: #5020BB;
     --pf-v5-c-nav__link--active--BackgroundColor: #7B35FD;
