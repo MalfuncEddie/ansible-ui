@@ -186,7 +186,7 @@ pre {
   --pf-v5-c-toolbar--BackgroundColor: #7B36FE;
 }
 
-.pf-v5-c-toolbar .pf-m-inset-none {
+.pf-v5-c-toolbar.pf-m-inset-none {
   background: #7B36FE;
 
 }
