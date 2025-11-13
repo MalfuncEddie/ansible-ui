@@ -2,20 +2,21 @@
 
 UI projects for [Ansible](https://www.ansible.com).
 
-- [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [NPM Scripts](#npm-scripts)
-- [Documentation](#documentation)
-- [Code of Conduct](#code-of-conduct)
+- [Ansible UI](#ansible-ui)
+  - [Getting Started](#getting-started)
+  - [Environment Variables](#environment-variables)
+  - [NPM Scripts](#npm-scripts)
+  - [Documentation](#documentation)
+  - [Code of Conduct](#code-of-conduct)
 
 ## Getting Started
 
 1. Prerequisites
 
-   - Node 18.x (recommended)
-   - NPM 8.x (recommended)
+   - Node 24.x (required)
+   - NPM 10.x (required)
 
-   Note: The project should with older versions of node and npm but may require regenerating the package-lock.json.
+   Note: The project requires with older versions of node and npm but may require regenerating the package-lock.json.
 
 2. Clone Repository
 
