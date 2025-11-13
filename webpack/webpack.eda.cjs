@@ -21,15 +21,14 @@ module.exports = function (env, argv) {
 
   config.devServer.proxy = [
     {
+      context: ['/api'],
       target: EDA_SERVER,
       secure: false,
-      pathRewrite: { '^/api': '' },
-      bypass: (req) => {
-        if (req.url.startsWith('/api')) {
-          req.headers.host = proxyUrl.host;
-          req.headers.origin = proxyUrl.origin;
-          req.headers.referer = proxyUrl.href;
-        }
+      changeOrigin: true,
+      onProxyReq: (proxyReq, req, res) => {
+        proxyReq.setHeader('host', proxyUrl.host);
+        proxyReq.setHeader('origin', proxyUrl.origin);
+        proxyReq.setHeader('referer', proxyUrl.href);
       },
     },
   ];

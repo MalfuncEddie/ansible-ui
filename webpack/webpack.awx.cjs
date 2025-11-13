@@ -21,35 +21,33 @@ module.exports = function (env, argv) {
 
   config.devServer.proxy = [
     {
+      context: ['/api'],
       target: AWX_SERVER,
       secure: false,
-      pathRewrite: { '^/api': '' },
-      bypass: (req) => {
-        if (req.url.startsWith('/api')) {
-          req.headers.host = proxyUrl.host;
-          req.headers.origin = proxyUrl.origin;
-          req.headers.referer = proxyUrl.href;
-        }
+      changeOrigin: true,
+      onProxyReq: (proxyReq, req, res) => {
+        proxyReq.setHeader('host', proxyUrl.host);
+        proxyReq.setHeader('origin', proxyUrl.origin);
+        proxyReq.setHeader('referer', proxyUrl.href);
       },
     },
     {
+      context: ['/sso'],
       target: AWX_SERVER,
       secure: false,
-      pathRewrite: { '^/sso': '' },
-      bypass: (req, res, options) => {
-        if (req.url.startsWith('/sso')) {
-          req.headers.origin = proxyUrl.origin;
-          req.headers.host = getRawHeader(req.rawHeaders, 'Host') || proxyUrl.host;
-          req.referrer = getRawHeader(req.rawHeaders, 'Referer') || proxyUrl.href;
-        }
+      changeOrigin: true,
+      onProxyReq: (proxyReq, req, res) => {
+        proxyReq.setHeader('origin', proxyUrl.origin);
+        proxyReq.setHeader('host', getRawHeader(req.rawHeaders, 'Host') || proxyUrl.host);
+        proxyReq.setHeader('referrer', getRawHeader(req.rawHeaders, 'Referer') || proxyUrl.href);
       },
     },
     {
+      context: ['/websocket'],
       target: AWX_SERVER,
       secure: false,
       ws: true,
       changeOrigin: true,
-      pathRewrite: { '^/websocket': '' },
     },
   ];
   return config;
