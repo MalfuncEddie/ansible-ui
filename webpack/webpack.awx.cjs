@@ -19,32 +19,39 @@ module.exports = function (env, argv) {
     })
   );
 
-  config.devServer.proxy = {
-    '/api': {
+  config.devServer.proxy = [
+    {
       target: AWX_SERVER,
       secure: false,
+      pathRewrite: { '^/api': '' },
       bypass: (req) => {
-        req.headers.host = proxyUrl.host;
-        req.headers.origin = proxyUrl.origin;
-        req.headers.referer = proxyUrl.href;
+        if (req.url.startsWith('/api')) {
+          req.headers.host = proxyUrl.host;
+          req.headers.origin = proxyUrl.origin;
+          req.headers.referer = proxyUrl.href;
+        }
       },
     },
-    '/sso': {
+    {
       target: AWX_SERVER,
       secure: false,
+      pathRewrite: { '^/sso': '' },
       bypass: (req, res, options) => {
-        req.headers.origin = proxyUrl.origin;
-        req.headers.host = getRawHeader(req.rawHeaders, 'Host') || proxyUrl.host;
-        req.referrer = getRawHeader(req.rawHeaders, 'Referer') || proxyUrl.href;
+        if (req.url.startsWith('/sso')) {
+          req.headers.origin = proxyUrl.origin;
+          req.headers.host = getRawHeader(req.rawHeaders, 'Host') || proxyUrl.host;
+          req.referrer = getRawHeader(req.rawHeaders, 'Referer') || proxyUrl.href;
+        }
       },
     },
-    '/websocket': {
+    {
       target: AWX_SERVER,
       secure: false,
       ws: true,
       changeOrigin: true,
+      pathRewrite: { '^/websocket': '' },
     },
-  };
+  ];
   return config;
 };
 

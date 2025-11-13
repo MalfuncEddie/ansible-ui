@@ -20,16 +20,19 @@ module.exports = function (env, argv) {
     })
   );
 
-  config.devServer.proxy = {
-    '/api': {
+  config.devServer.proxy = [
+    {
       target: HUB_SERVER,
       secure: false,
+      pathRewrite: { '^/api': '' },
       bypass: (req) => {
-        req.headers.host = proxyUrl.host;
-        req.headers.origin = proxyUrl.origin;
-        req.headers.referer = proxyUrl.href;
+        if (req.url.startsWith('/api')) {
+          req.headers.host = proxyUrl.host;
+          req.headers.origin = proxyUrl.origin;
+          req.headers.referer = proxyUrl.href;
+        }
       },
     },
-  };
+  ];
   return config;
 };
